@@ -4,3 +4,7 @@ obj/
 
 .fake
 .ionide
+
+node_modules/
+.fable/
+*.fs.js
