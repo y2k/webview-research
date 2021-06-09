@@ -4,5 +4,5 @@ open System.Drawing
 
 [<EntryPoint>]
 let main argv =
-    Webview.Simple("Window Title", Content.FromUri(Uri "https://google.com"), Size(500, 600), false)
+    Webview.Simple("TODO List", Content.FromUri(Uri "http://localhost:8080/"), Size(500, 600), false)
     0
