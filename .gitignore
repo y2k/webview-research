@@ -8,3 +8,6 @@ obj/
 node_modules/
 .fable/
 *.fs.js
+
+.parcel-cache/
+dist/
