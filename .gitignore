@@ -12,3 +12,4 @@ node_modules/
 .parcel-cache/
 dist/
 rust-app/target/
+bundle.js

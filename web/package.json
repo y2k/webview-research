@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "bundle": "dotnet fable src && parcel build src/App.fs.js",
+    "bundle": "dotnet fable src && parcel build src/App.fs.js && mv dist/App.fs.js public/bundle.js",
     "start": "dotnet fable watch src --run webpack-dev-server"
   },
   "devDependencies": {

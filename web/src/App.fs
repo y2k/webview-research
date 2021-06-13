@@ -4,6 +4,13 @@ open Browser.Dom
 open Fable.React
 open Fable.React.Props
 open Fulma
+open Fable.Core.JsInterop
+open Fable.Core.JS
+open Fable.Core
+open Fable.Core.Util
+
+[<Global>]
+let evalTest x : unit = jsNative
 
 let TodoApp =
     let removeAt index xs =
@@ -32,6 +39,9 @@ let TodoApp =
                                         state.update (fun xs -> text.current :: xs)
                                         text.update "") ] [
                     str "Добавить"
+                ]
+                Button.button [ Button.OnClick(fun _ -> evalTest "333") ] [
+                    str "Test"
                 ]
                 div [ Style [ Height 20 ] ] []
                 yield!
