@@ -15,7 +15,7 @@ let external : External = jsNative
 let TodoApp =
     let removeAt index xs =
         xs
-        |> Seq.mapi (fun i x -> i, x)
+        |> Seq.indexed
         |> Seq.filter (fun (i, _) -> i <> index)
         |> Seq.map snd
         |> Seq.toList
