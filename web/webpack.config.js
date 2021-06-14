@@ -17,5 +17,12 @@ module.exports = {
         port: 8080,
     },
     module: {
+    },
+    resolve: {
+        "alias": {
+            "react": "preact/compat",
+            "react-dom/test-utils": "preact/test-utils",
+            "react-dom": "preact/compat"
+        }
     }
 }

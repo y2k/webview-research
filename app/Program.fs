@@ -4,5 +4,14 @@ open System.Drawing
 
 [<EntryPoint>]
 let main argv =
-    Webview.Simple("TODO List", Content.FromUri(Uri "http://localhost:8080/"), Size(500, 600), false)
+    WebviewBuilder(
+        "TODO List",
+        Content.FromUri(Uri "file:///Users/igor/Projects/webview-example/web/public/index.html")
+    )
+        .WithSize(Size(500, 600))
+        .WithInvokeCallback(fun _ payload -> printfn "Called from JS: %s" payload)
+        .Debug()
+        .Build()
+        .Run()
+
     0

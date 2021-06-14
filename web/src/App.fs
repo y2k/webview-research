@@ -4,13 +4,13 @@ open Browser.Dom
 open Fable.React
 open Fable.React.Props
 open Fulma
-open Fable.Core.JsInterop
-open Fable.Core.JS
 open Fable.Core
-open Fable.Core.Util
+
+type External =
+    abstract invoke : _ -> unit
 
 [<Global>]
-let evalTest x : unit = jsNative
+let external : External = jsNative
 
 let TodoApp =
     let removeAt index xs =
@@ -40,8 +40,8 @@ let TodoApp =
                                         text.update "") ] [
                     str "Добавить"
                 ]
-                Button.button [ Button.OnClick(fun _ -> evalTest "333") ] [
-                    str "Test"
+                Button.button [ Button.OnClick(fun _ -> external.invoke "6") ] [
+                    str "Call native"
                 ]
                 div [ Style [ Height 20 ] ] []
                 yield!
