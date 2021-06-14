@@ -1,5 +1,6 @@
 module App
 
+open System
 open Browser.Dom
 open Fable.React
 open Fable.React.Props
@@ -34,7 +35,8 @@ let TodoApp =
                                       Input.OnChange(fun x -> text.update x.Value) ]
                     ]
                 ]
-                Button.button [ Button.OnClick
+                Button.button [ Button.Disabled(String.IsNullOrWhiteSpace text.current)
+                                Button.OnClick
                                     (fun _ ->
                                         state.update (fun xs -> text.current :: xs)
                                         text.update "") ] [
