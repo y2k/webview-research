@@ -11,6 +11,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "App", "web\src\App.fsproj",
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "app-eval", "app-eval\app-eval.fsproj", "{FA9494B9-71CC-40BA-9AE5-E51635DF9388}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "photino", "photino\photino.fsproj", "{B1B19C5E-2CC5-4C3A-BC4B-E956A6D1792D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,6 +62,18 @@ Global
 		{FA9494B9-71CC-40BA-9AE5-E51635DF9388}.Release|x64.Build.0 = Release|Any CPU
 		{FA9494B9-71CC-40BA-9AE5-E51635DF9388}.Release|x86.ActiveCfg = Release|Any CPU
 		{FA9494B9-71CC-40BA-9AE5-E51635DF9388}.Release|x86.Build.0 = Release|Any CPU
+		{B1B19C5E-2CC5-4C3A-BC4B-E956A6D1792D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1B19C5E-2CC5-4C3A-BC4B-E956A6D1792D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1B19C5E-2CC5-4C3A-BC4B-E956A6D1792D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B1B19C5E-2CC5-4C3A-BC4B-E956A6D1792D}.Debug|x64.Build.0 = Debug|Any CPU
+		{B1B19C5E-2CC5-4C3A-BC4B-E956A6D1792D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B1B19C5E-2CC5-4C3A-BC4B-E956A6D1792D}.Debug|x86.Build.0 = Debug|Any CPU
+		{B1B19C5E-2CC5-4C3A-BC4B-E956A6D1792D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1B19C5E-2CC5-4C3A-BC4B-E956A6D1792D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1B19C5E-2CC5-4C3A-BC4B-E956A6D1792D}.Release|x64.ActiveCfg = Release|Any CPU
+		{B1B19C5E-2CC5-4C3A-BC4B-E956A6D1792D}.Release|x64.Build.0 = Release|Any CPU
+		{B1B19C5E-2CC5-4C3A-BC4B-E956A6D1792D}.Release|x86.ActiveCfg = Release|Any CPU
+		{B1B19C5E-2CC5-4C3A-BC4B-E956A6D1792D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{734A94C9-25BB-4CE9-B24E-CAB06D33F21A} = {DE4F27D2-AFE5-4091-B160-C2D1DFE73428}
